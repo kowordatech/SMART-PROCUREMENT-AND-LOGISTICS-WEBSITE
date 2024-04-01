@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
   --primary: #ffa500;
-  --secondary: #adf802;
+  --secondary: #ffff;
   /* --secondary: #51CFED; */
   --light: #f8f2f0;
   --dark: #060315;
@@ -19,6 +19,13 @@
 .text-primary {
   margin-left: 28px;
   letter-spacing: 8px;
+  color: var(--primary);
+}
+
+.logo-color{
+  margin-left: 50px;
+  letter-spacing: 8px;
+  color: var(--primary)
 }
 
 .fw-medium {
@@ -27,6 +34,8 @@
 
 .back-to-top {
   position: fixed;
+  color: #cfbdbd;
+  background-color: var(--primary);
   display: none;
   right: 45px;
   bottom: 45px;
@@ -51,13 +60,60 @@
 .btn {
   font-weight: 600;
   transition: 0.5s;
+  border-radius: 10px;
+}
+
+.btn-one{
+  background-color: var(--primary);
+}
+.btn-two{
+  background-color: var(--secondary);
+  color: #060315;
 }
 
 .more-btn {
   margin-left: 40%;
   border-radius: 8px;
+  background-color: var(--primary);
+}
+.color-one{
+  color: var(--primary);
+} 
+
+.count-1{
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
+.count-2{
+  background-color: #cfbdbd;
+  color: var(--secondary);
+  box-shadow:2px #060315;
+}
+
+.count-3{
+  background-color: var(--secondary);
+  color: var(--dark);
+  /* border: 1px solid #060315; */
+  box-shadow: 5px 5px 45px rgba(26, 25, 25, 0.08);
+}
+.count-3-inner{
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.call-icon{
+  background-color: var(--primary);
+  color: var(--secondary)
+}
+
+.color-two{
+  color: var(--secondary);
+}
+
+.nav-bar{
+  border-top:5.5px solid var(--primary);
+}
 .btn.btn-primary,
 .btn.btn-secondary {
   color: #ffffff;
