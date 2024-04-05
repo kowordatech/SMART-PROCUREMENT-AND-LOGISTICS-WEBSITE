@@ -110,9 +110,26 @@
             }
         }
     });
-    
+
+    // Customer logos slideshow
+    document.addEventListener("DOMContentLoaded", function() {
+        const customerLogos = document.querySelector(".customer-logos");
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+        const slideWidth = slides[0].clientWidth;
+        let currentSlide = 0;
+
+        // Check if there are more than three slides
+        if (totalSlides > 3) {
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                customerLogos.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+            }, 3000); // Change slide every 3 seconds
+        }
+    });
     
 })(jQuery);
+
 
 
 
