@@ -4,6 +4,7 @@
   --secondary: #ffff;
   --light: #f8f2f0;
   --dark: #060315;
+  --primary2:#56f847e1;
 }
 
 .flex-column {
@@ -111,7 +112,7 @@
 }
 
 .nav-bar{
-  border-top:5.5px solid var(--primary);
+  border-top:5.5px solid var(--primary2);
 }
 .btn.btn-primary,
 .btn.btn-secondary {
@@ -295,6 +296,24 @@
 .contact-btn i {
   margin-right: 10px;
 }
+
+@media (max-width: 767px) {
+  .map-container {
+    order: 2;
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  .contact-form {
+    order: 1;
+    margin-bottom: 20px; /* Adjust this value as needed */
+  }
+
+  .position-relative {
+    position: static !important; /* Override the position for mobile */
+  }
+}
+
+
 
 /*** Header ***/
 @media (max-width: 768px) {
