@@ -22,7 +22,6 @@
 }
 
 
-
 .btn {
     font-weight: 600;
     transition: 0.5s;
@@ -47,11 +46,6 @@
   .color-one{
     color: var(--primary);
   } 
-
-.logo-image {
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
 
 
 .fw-medium {
@@ -119,7 +113,10 @@
 
 
 /*** Button ***/
-
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
 
 .more-btn{
     
