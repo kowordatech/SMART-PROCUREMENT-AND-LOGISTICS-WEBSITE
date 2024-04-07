@@ -21,6 +21,37 @@
     letter-spacing: 8px
 }
 
+.logo-image {
+  width: 100%; /* Make the logo fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust logo size for different screen sizes */
+@media (min-width: 576px) {
+  .logo-image {
+    max-width: 150px; /* Adjust size for smaller devices */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-image {
+    max-width: 200px; /* Adjust size for medium devices */
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-image {
+    max-width: 250px; /* Adjust size for large devices */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-image {
+    max-width: 300px; /* Adjust size for extra large devices */
+  }
+}
+
+
 
 .btn {
     font-weight: 600;
